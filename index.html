@@ -3,7 +3,948 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/ico" href="images/login.png">
     <title>Orient.uz</title>
   </head>
-  <body></body>
+  <body>
+      <header>
+        <div class="container">
+          <nav>
+            <div class="logo">
+              <img src="images/orient-logo.png" alt="logo__image" class="logo">
+            </div>
+            <ul class="navbar-list">
+              <li class="nav-item active"><a href="#"">Главная</a></li>
+              <li class="nav-item"><a href="#">Дела</a></li>
+              <li class="nav-item"><a href="#">Календарь</a></li>
+              <li class="nav-item"><a href="#">Документы</a></li>
+              <li class="nav-item"><a href="#">Контакты</a></li>
+              <li class="nav-item"><a href="#">Отчеты</a></li>
+              <li class="nav-item"><a href="#">Полезные ресурсы</a></li>
+              <li class="nav-item"><a href="#">Сотрудники</a></li>
+            </ul>
+            <div class="nav-settings">
+              <div class="dropdowns">
+                <div class="dropdown dropdown-add">
+                <a href="#" data-toggle="dropdown">
+                 <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-menu">
+                 <li><a class="drop-item" href="#">Создать</a></li>
+                 <li><a class="drop-item" href="#">Дело</a></li>
+                 <li><a class="drop-item" href="#">Контакт</a></li>
+                 <li><a class="drop-item" href="#">Мероприятие</a></li>
+                </div>
+              </div>
+              <div class="dropdown dropdown-email">
+                <a href="#" data-toggle="dropdown">
+                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-menu">
+                 <li><a class="drop-item" href="#">Создать</a></li>
+                 <li><a class="drop-item" href="#">Дело</a></li>
+                 <li><a class="drop-item" href="#">Контакт</a></li>
+                 <li><a class="drop-item" href="#">Мероприятие</a></li>
+                </div>
+              </div>
+              <div class="dropdown dropdown-bell">
+                <a href="#" data-toggle="dropdown">
+                 <i class="fa fa-bell-o" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-menu">
+                 <li><a class="drop-item" href="#">Создать</a></li>
+                 <li><a class="drop-item" href="#">Дело</a></li>
+                 <li><a class="drop-item" href="#">Контакт</a></li>
+                 <li><a class="drop-item" href="#">Мероприятие</a></li>
+                </div>
+                <div class="dropdown dropdown-search">
+                  <a href="#" data-toggle="dropdown">
+                   <i class="fa fa-plus-search" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                   <li><a class="drop-item" href="#">Создать</a></li>
+                   <li><a class="drop-item" href="#">Дело</a></li>
+                   <li><a class="drop-item" href="#">Контакт</a></li>
+                   <li><a class="drop-item" href="#">Мероприятие</a></li>
+                  </div>
+                </div>
+              </div>
+              </div>
+              
+            </div>
+            <div class="nav-admin">
+              <div class="dropdown dropdown-admin">
+                <a href="#" data-toggle="dropdown">
+                 <img src="images/director.png" alt="director">
+                </a>
+                <div class="dropdown-menu">
+                 <li><a class="drop-item" href="#">Создать</a></li>
+                 <li><a class="drop-item" href="#">Дело</a></li>
+                 <li><a class="drop-item" href="#">Контакт</a></li>
+                 <li><a class="drop-item" href="#">Мероприятие</a></li>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section class="employee">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="staff">
+                <div class="staff-title d-flex">
+                  <div class="title-name">Сотрудники</div>
+                  <div class="title-icons">
+                    <button type="button" class="btn"><i class="fa fa-plus"></i></button>
+                    <button type="button" class="btn"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+                <table class="mytable">
+                  <thead>
+                    <tr>
+                      <th class="fullname"><span>Ф.И.О</span> <i class="fa fa-long-arrow-up" aria-hidden="true"></i></th>
+                      <th class="work"><span>Дела</span></th>
+                      <th class="exercise"><span>Задачи</span></th>
+                      <th class="loading"><span>Загруженность</span></th>
+                      <th><span></span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="tbody-row">
+                      <td class="table-name d-flex">
+                        <div class="table-image">
+                          <img src="images/director.png" alt="director">
+                        </div>
+                        <div class="table-text">
+                          <div class="text-name">Абраменко Андрей Николаевич</div>
+                          <div class="text-company">GOLDEN HOUSE DEVELOPMENT</div>
+                        </div>
+                      </td>
+                      <td class="number">
+                        <span class="table-number">2</span>
+                      </td>
+                      <td class="number">
+                        <span class="table-number">0</span>
+                      </td>
+                      <td>
+                        <div class="d-flex align-items-center justify-content-center">
+                          <div class="workload green">
+                              <span>53%</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="mydots">
+                          <div class="dropdown">
+                              <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                              </button>
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#"><i class="fa fa-trash-o"></i> Удалить</a>
+                                  <a class="dropdown-item" href="#"><i class="fa fa-pencil"></i> Редатировать</a>
+                              </div>
+                          </div>
+                      </div>
+                      </td>
+                    </tr>
+                    <tr class="tbody-row">
+                      <td class="table-name d-flex">
+                        <div class="table-image">
+                          <img src="images/people-2.png" alt="director">
+                        </div>
+                        <div class="table-text">
+                          <div class="text-name">Бахрамов Искандер Алишерович</div>
+                          <div class="text-company">GOLDEN HOUSE DEVELOPMENT</div>
+                        </div>
+                      </td>
+                      <td class="number">
+                        <span class="table-number">5</span>
+                      </td>
+                      <td class="number">
+                        <span class="table-number">5</span>
+                      </td>
+                      <td>
+                        <div class="d-flex align-items-center justify-content-center">
+                          <div class="workload red">
+                              <span>17%</span>
+                          </div>
+                        </div>
+                      </td>
+                      
+                      <td>
+                        <div class="mydots">
+                          <div class="dropdown">
+                              <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                              </button>
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#"><i class="fa fa-trash-o"></i> Удалить</a>
+                                  <a class="dropdown-item" href="#"><i class="fa fa-pencil"></i> Редатировать</a>
+                              </div>
+                          </div>
+                      </div>
+                      </td>
+                    </tr>
+                    <tr class="tbody-row">
+                      <td class="table-name d-flex">
+                        <div class="table-image">
+                          <img src="images/people-2.png" alt="director">
+                        </div>
+                        <div class="table-text">
+                          <div class="text-name">Бахрамов Искандер Алишерович</div>
+                          <div class="text-company">GOLDEN HOUSE DEVELOPMENT</div>
+                        </div>
+                      </td>
+                      <td class="number">
+                        <span class="table-number">3</span>
+                      </td>
+                      <td class="number">
+                        <span class="table-number">0</span>
+                      </td>
+                      <td>
+                        <div class="d-flex align-items-center justify-content-center">
+                          <div class="workload red">
+                              <span>24%</span>
+                          </div>
+                        </div>
+                      </td>
+                      
+                      <td>
+                        <div class="mydots">
+                          <div class="dropdown">
+                              <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                              </button>
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#"><i class="fa fa-trash-o"></i> Удалить</a>
+                                  <a class="dropdown-item" href="#"><i class="fa fa-pencil"></i> Редатировать</a>
+                              </div>
+                          </div>
+                      </div>
+                      </td>
+                    </tr>
+                    <tr class="tbody-row">
+                      <td class="table-name d-flex">
+                        <div class="table-image">
+                          <img src="images/people-3.png" alt="director">
+                        </div>
+                        <div class="table-text">
+                          <div class="text-name">Смирнов Геннадий Викторович</div>
+                          <div class="text-company">GOLDEN HOUSE DEVELOPMENT</div>
+                        </div>
+                      </td>
+                      <td class="number">
+                        <span class="table-number">1</span>
+                      </td>
+                      <td class="number">
+                        <span class="table-number">1</span>
+                      </td>
+                      <td>
+                        <div class="d-flex align-items-center justify-content-center">
+                          <div class="workload green">
+                              <span>65%</span>
+                          </div>
+                        </div>
+                      </td>
+                      
+                      <td>
+                        <div class="mydots">
+                          <div class="dropdown">
+                              <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                              </button>
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#"><i class="fa fa-trash-o"></i> Удалить</a>
+                                  <a class="dropdown-item" href="#"><i class="fa fa-pencil"></i> Редатировать</a>
+                              </div>
+                          </div>
+                      </div>
+                      </td>
+                    </tr>
+                    <tr class="tbody-row">
+                      <td class="table-name d-flex">
+                        <div class="table-image">
+                          <img src="images/people-4.png" alt="director">
+                        </div>
+                        <div class="table-text">
+                          <div class="text-name">Закирова Нозима Ибрагимовна</div>
+                          <div class="text-company">GOLDEN HOUSE DEVELOPMENT</div>
+                        </div>
+                      </td>
+                      <td class="number">
+                        <span class="table-number">1</span>
+                      </td>
+                      <td class="number">
+                        <span class="table-number">0</span>
+                      </td>
+                      <td>
+                        <div class="d-flex align-items-center justify-content-center">
+                          <div class="workload green">
+                              <span>65%</span>
+                          </div>
+                        </div>
+                      </td>
+                      
+                      <td>
+                        <div class="mydots">
+                          <div class="dropdown">
+                              <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                              </button>
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#"><i class="fa fa-trash-o"></i> Удалить</a>
+                                  <a class="dropdown-item" href="#"><i class="fa fa-pencil"></i> Редатировать</a>
+                              </div>
+                          </div>
+                      </div>
+                      </td>
+                    </tr>
+                    <tr class="tbody-row">
+                      <td class="table-name d-flex">
+                        <div class="table-image">
+                          <img src="images/people-5.png" alt="director">
+                        </div>
+                        <div class="table-text">
+                          <div class="text-name">Валиев Ботир Акрамович</div>
+                          <div class="text-company">GOLDEN HOUSE DEVELOPMENT</div>
+                        </div>
+                      </td>
+                      <td class="number">
+                        <span class="table-number">3</span>
+                      </td>
+                      <td class="number">
+                        <span class="table-number">3</span>
+                      </td>
+                      <td>
+                        <div class="d-flex align-items-center justify-content-center">
+                          <div class="workload green">
+                              <span>65%</span>
+                          </div>
+                        </div>
+                      </td>
+                      
+                      <td>
+                        <div class="mydots">
+                          <div class="dropdown">
+                              <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                              </button>
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#"><i class="fa fa-trash-o"></i> Удалить</a>
+                                  <a class="dropdown-item" href="#"><i class="fa fa-pencil"></i> Редатировать</a>
+                              </div>
+                          </div>
+                      </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="works">
+                <div class="staff-title d-flex">
+                  <div class="title-name">Задачи</div>
+                  <div class="title-icons">
+                    <button type="button" class="btn"><i class="fa fa-plus"></i></button>
+                    <button type="button" class="btn"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+                <div class="works__tabs">
+                  <ul class="nav nav-pills">
+                    <li class="tab-active"><a class="tab-link" data-toggle="pill" href="#home">Делаю</a></li>
+                    <li><a class="tab-link" data-toggle="pill" href="#menu1">Завершенные</a></li>
+                    <li><a class="tab-link" data-toggle="pill" href="#menu2">Поручил</a></li>
+                  </ul>
+                  
+                  <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active show">
+                      <div class="tasks__item">
+                        <div class="badge"><i class="fa fa-calendar"></i> <span class="pl-1">Сегодня</span></div>
+                        <div class="checkbox">
+                          <input type="checkbox" id="check1">
+                          <label for="check1" class="label-one">Обновить пакет документов с учетом дополнительных материалов</label>
+                        </div>
+                      </div>
+                      <div class="tasks__item pt-3">
+                        <div class="badge"><i class="fa fa-calendar"></i> <span class="pl-1">Завтра</span></div>
+                        <div class="checkbox pt-3">
+                          <input type="checkbox" id="check2">
+                          <label for="check2" class="label-two">Подготовиться к судебному заседанию</label>
+                        </div>
+                        <div class="item-bottom ml-4">Иск к Радио Вперед о нарушении условий расторжения трудового договора</div>
+                        <div class="checkbox pt-3">
+                          <input type="checkbox" id="check2">
+                          <label for="check2" class="label-two">Подготовиться к судебному заседанию</label>
+                        </div>
+                        <div class="item-bottom ml-4">Иск к Радио Вперед о нарушении условий расторжения трудового договора</div>
+                      </div>
+                      <div class="tasks__item last-task pt-3">
+                        <div class="badge"><i class="fa fa-calendar"></i> <span class="pl-1">25 сентября</span></div>
+                        <div class="checkbox pt-3">
+                          <input type="checkbox" id="check2">
+                          <label for="check2" class="label-two">Подготовиться к судебному заседанию</label>
+                        </div>
+                        <div class="item-bottom ml-4">Иск к Радио Вперед о нарушении условий расторжения трудового договора</div>
+                      </div>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                      
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="affairs">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="affairs-card">
+                <div class="staff-title d-flex">
+                <div class="title-name">Дела</div>
+                <div class="title-icons">
+                  <button type="button" class="btn"><i class="fa fa-plus"></i></button>
+                  <button type="button" class="btn"><i class="fa fa-search"></i></button>
+                </div>
+                </div>
+              <div class="works__tabs">
+                <ul class="nav nav-pills">
+                  <li class="tab-active"><a class="tab-link" data-toggle="pill" href="#prior">Приоритетные: <span class="affairs-number">3</span></a></li>
+                  <li><a class="tab-link" data-toggle="pill" href="#divide">К рапределению: <span>1</span></a></li>
+                  <li><a class="tab-link" data-toggle="pill" href="#offence">Нарушения сроков: <span>4</span></a></li>
+                </ul>
+                
+                <div class="tab-content">
+                  <div id="prior" class="tab-pane fade in active show">
+                    <table class="affairs-table">
+                      <thead>
+                        <tr>
+                          <td>Исполнитель</td>
+                          <td>Тема</td>
+                          <td>Изменено</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="table-name d-flex">
+                            <div class="table-image">
+                              <img src="images/people-5.png" alt="director">
+                            </div>
+                            <div class="table-text">
+                              <div class="text-name">Валиев Ботир Акрамович</div>
+                              <div class="text-company">GOLDEN HOUSE DEVELOPMENT</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="theme-title">23: Представление в суде по иску о взысканиии задолженности по договору купли-продажи НП</div>
+                            <div class="theme-info">Сопровождение бизнеса > Разрешение споров</div>
+                          </td>
+                          <td><div class="affairs-date">18.09.2020</div></td>
+                        </tr>
+                        <tr>
+                          <td class="table-name d-flex">
+                            <div class="table-image">
+                              <img src="images/people-5.png" alt="director">
+                            </div>
+                            <div class="table-text">
+                              <div class="text-name">Валиев Ботир Акрамович</div>
+                              <div class="text-company">GOLDEN HOUSE DEVELOPMENT</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="theme-title"> 29: Заключение контракта по сопровождению бизнеса ПАО СНК-Стройка</div>
+                            <div class="theme-info">Внутренние задачи > Продвижение и продажи</div>
+                          </td>
+                          <td><div class="affairs-date">18.09.2020</div></td>
+                        </tr>
+                        <tr>
+                          <td class="table-name d-flex">
+                            <div class="table-image">
+                              <img src="images/people-5.png" alt="director">
+                            </div>
+                            <div class="table-text">
+                              <div class="text-name">Валиев Ботир Акрамович</div>
+                              <div class="text-company">GOLDEN HOUSE DEVELOPMENT</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="theme-title">18: Юридическое сопровождение проекта по открытию розничных магазинов в Бухаре</div>
+                            <div class="theme-info">Сопровождение бизнеса > Сопровождение бизнес-операций, сделок</div>
+                          </td>
+                          <td><div class="affairs-date">18.09.2020</div></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div id="divide" class="tab-pane fade">
+                    <table class="affairs-table">
+                      <thead>
+                        <tr>
+                          <td>Исполнитель</td>
+                          <td>Тема</td>
+                          <td>Изменено</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="table-name d-flex">
+                            <div class="table-image">
+                              <img src="images/people-5.png" alt="director">
+                            </div>
+                            <div class="table-text">
+                              <div class="text-name">Валиев Ботир Акрамович</div>
+                              <div class="text-company">GOLDEN HOUSE DEVELOPMENT</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="theme-title">23: Представление в суде по иску о взысканиии задолженности по договору купли-продажи НП</div>
+                            <div class="theme-info">Сопровождение бизнеса > Разрешение споров</div>
+                          </td>
+                          <td><div class="affairs-date">18.09.2020</div></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div id="offence" class="tab-pane fade">
+                    <table class="affairs-table">
+                      <thead>
+                        <tr>
+                          <td>Исполнитель</td>
+                          <td>Тема</td>
+                          <td>Изменено</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="table-name d-flex">
+                            <div class="table-image">
+                              <img src="images/people-5.png" alt="director">
+                            </div>
+                            <div class="table-text">
+                              <div class="text-name">Валиев Ботир Акрамович</div>
+                              <div class="text-company">GOLDEN HOUSE DEVELOPMENT</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="theme-title">23: Представление в суде по иску о взысканиии задолженности по договору купли-продажи НП</div>
+                            <div class="theme-info">Сопровождение бизнеса > Разрешение споров</div>
+                          </td>
+                          <td><div class="affairs-date">18.09.2020</div></td>
+                        </tr>
+                        <tr>
+                          <td class="table-name d-flex">
+                            <div class="table-image">
+                              <img src="images/people-5.png" alt="director">
+                            </div>
+                            <div class="table-text">
+                              <div class="text-name">Валиев Ботир Акрамович</div>
+                              <div class="text-company">GOLDEN HOUSE DEVELOPMENT</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="theme-title"> 29: Заключение контракта по сопровождению бизнеса ПАО СНК-Стройка</div>
+                            <div class="theme-info">Внутренние задачи > Продвижение и продажи</div>
+                          </td>
+                          <td><div class="affairs-date">18.09.2020</div></td>
+                        </tr>
+                        <tr>
+                          <td class="table-name d-flex">
+                            <div class="table-image">
+                              <img src="images/people-5.png" alt="director">
+                            </div>
+                            <div class="table-text">
+                              <div class="text-name">Валиев Ботир Акрамович</div>
+                              <div class="text-company">GOLDEN HOUSE DEVELOPMENT</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="theme-title">18: Юридическое сопровождение проекта по открытию розничных магазинов в Бухаре</div>
+                            <div class="theme-info">Сопровождение бизнеса > Сопровождение бизнес-операций, сделок</div>
+                          </td>
+                          <td><div class="affairs-date">18.09.2020</div></td>
+                        </tr>
+                        <tr>
+                          <td class="table-name d-flex">
+                            <div class="table-image">
+                              <img src="images/people-5.png" alt="director">
+                            </div>
+                            <div class="table-text">
+                              <div class="text-name">Валиев Ботир Акрамович</div>
+                              <div class="text-company">GOLDEN HOUSE DEVELOPMENT</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="theme-title">18: Юридическое сопровождение проекта по открытию розничных магазинов в Бухаре</div>
+                            <div class="theme-info">Сопровождение бизнеса > Сопровождение бизнес-операций, сделок</div>
+                          </td>
+                          <td><div class="affairs-date">18.09.2020</div></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="events">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="events-card">
+                <div class="staff-title d-flex">
+                  <div class="title-name">Мероприятие</div>
+                  <div class="title-icons">
+                    <button type="button" class="btn"><i class="fa fa-plus"></i></button>
+                    <button type="button" class="btn"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+                <div class="events-card__item border-bottom">
+                    <div class="item-day"><i class="fa fa-calendar"></i> <span class="pl-1">Завтра</span></div>
+                  <div class="item-info">
+                    <div class="item-info__text">
+                      <div class="div">Наша позиция по иску РАО</div>
+                      <div class="item-bottom">5: Нарушение авторских прав</div>
+                     </div>
+                    <div class="item-info__date">18:00 - 19:00 <i class="fa fa-clock-o"></i></div>
+                  </div>
+                  
+                </div>
+                <div class="events-card__item border-bottom">
+                    <div class="item-day"><i class="fa fa-calendar"></i> <span class="pl-1">Послезавтра</span></div>
+                  <div class="item-info">
+                    <div class="item-info__text">
+                      <div class="div">Обсуждение KPI отдела</div>
+                      <div class="div pt-2">Наша позиция по иску РАО</div>
+                     </div>
+                     <div class="dates">
+                       <div class="item-info__date">10:00 - 11:00 <i class="fa fa-clock-o"></i></div>
+                       <div class="item-info__date pt-2">15:30 - 16:00 <i class="fa fa-clock-o"></i></div>
+                     </div>
+                  </div>
+                </div>
+                <div class="events-card__item">
+                    <div class="item-day"><i class="fa fa-calendar"></i> <span class="pl-1">25 сентября</span></div>
+                  <div class="item-info">
+                    <div class="item-info__text">
+                      <div class="div">Обсуждение KPI отдела</div>
+                      <div class="div pt-2">Наша позиция по иску РАО</div>
+                     </div>
+                     <div class="dates">
+                       <div class="item-info__date">15:00 - 16:00 <i class="fa fa-clock-o"></i></div>
+                       <div class="item-info__date pt-2">15:00 - 16:00 <i class="fa fa-clock-o"></i></div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="deadline">
+                <div class="staff-title d-flex">
+                  <div class="title-name">Крайние сроки</div>
+                  <div class="title-icons">
+                    <button type="button" class="btn"><i class="fa fa-plus"></i></button>
+                    <button type="button" class="btn"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+                <div class="events-card__item border-bottom">
+                  <div class="item-day"><i class="fa fa-calendar"></i> <span class="pl-1">Завтра</span></div>
+                <div class="item-info">
+                  <div class="item-info__text">
+                    <div class="div">19: Подготовка пакета документов для открытия филиала</div>
+                   </div>
+                </div>
+                </div>
+                <div class="events-card__item">
+                  <div class="warning-text"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <span>18: Иск к ООО Комус по договору поставки мебели ДХ 102332/15</span></div> 
+                </div>
+                <div class="events-card__item">
+                  <div class="item-day mt-n3"><i class="fa fa-calendar"></i> <span class="pl-1">Послезавтра</span></div>
+                  <div class="warning-text pt-2"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <span>7: Взыскание задолженности с Белого Ветра</span></div> 
+                </div>
+                <div class="events-card__item border-bottom">
+                  <div class="item-day mt-n3"><i class="fa fa-calendar"></i> <span class="pl-1">Послезавтра</span></div>
+                  <div class="warning-text pt-2"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <span>10: Согласование договора с ООО Бест энтертеймент Рус</span></div> 
+                </div>
+                <div class="events-card__item">
+                  <div class="item-day mt-n2"><i class="fa fa-calendar"></i> <span class="pl-1">Послезавтра</span></div>
+                  <div class="warning-text pt-2"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <span>7: Взыскание задолженности с Белого Ветра</span></div> 
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="condition">
+                <div class="staff-title">
+                  <div class="title-name">Состояние дел</div>
+                  </div>
+                <div class="condition__tabs pt-3">
+                  <ul class="nav nav-pills">
+                    <li class="tab-active"><a class="tab-link" data-toggle="pill" href="#for-day">Сегодня</a></li>
+                    <li><a class="tab-link" data-toggle="pill" href="#for-week">За 7 дней</a></li>
+                    <li><a class="tab-link" data-toggle="pill" href="#for-month">За 30 дней</a></li>
+                  </ul>
+                  
+                  <div class="tab-content">
+                    <div id="for-day" class="tab-pane fade in active show">
+                      <div class="full-info">
+                        <div class="information">
+                        <div class="single-info">
+                          <div class="info-text">Поступило:</div>
+                          <div class="info-number">10</div>
+                        </div>
+                        <div class="single-info">
+                          <div class="info-text">Решено:</div>
+                          <div class="info-number">1</div>
+                        </div>
+                        <div class="single-info">
+                          <div class="info-text">Закрыто:</div>
+                          <div class="info-number">1</div>
+                        </div>
+                        <div class="single-info">
+                          <div class="info-text">Возвращено в работу:</div>
+                          <div class="info-number">0</div>
+                        </div>
+                      </div>
+                      </div>   
+                      <div class="active-works pt-3">
+                        <div class="active-works__title">Активные дела (17)</div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="pt-3">
+                              <div class="progress-text">
+                                <div class="progress-text-info">Новые</div>
+                                <div class="text-number">10</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-75 bg-success"></div>
+                            </div>
+                            </div>
+                            <div class="pt-4">
+                              <div class="progress-text">
+                                <div class="progress-text-info">В работе</div>
+                                <div class="text-number yellow">1</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-25 bg-yellow"></div>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="pt-3">
+                              <div class="progress-text">
+                                <div class="progress-text-info">Распределено</div>
+                                <div class="text-number blue">1</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-25 bg-blue"></div>
+                            </div>
+                            </div>
+                            <div class="pt-4">
+                              <div class="progress-text">
+                                <div class="progress-text-info">В работе</div>
+                                <div class="text-number progress-red">0</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-10 bg-red"></div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="for-week" class="tab-pane fade">
+                      <div class="full-info">
+                        <div class="information">
+                        <div class="single-info">
+                          <div class="info-text">Поступило:</div>
+                          <div class="info-number">10</div>
+                        </div>
+                        <div class="single-info">
+                          <div class="info-text">Решено:</div>
+                          <div class="info-number">1</div>
+                        </div>
+                        <div class="single-info">
+                          <div class="info-text">Закрыто:</div>
+                          <div class="info-number">1</div>
+                        </div>
+                        <div class="single-info">
+                          <div class="info-text">Возвращено в работу:</div>
+                          <div class="info-number">0</div>
+                        </div>
+                      </div>
+                      </div>   
+                      <div class="active-works pt-3">
+                        <div class="active-works__title">Активные дела (17)</div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="pt-3">
+                              <div class="progress-text">
+                                <div class="progress-text-info">Новые</div>
+                                <div class="text-number">10</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-75 bg-success"></div>
+                            </div>
+                            </div>
+                            <div class="pt-4">
+                              <div class="progress-text">
+                                <div class="progress-text-info">В работе</div>
+                                <div class="text-number yellow">1</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-25 bg-yellow"></div>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="pt-3">
+                              <div class="progress-text">
+                                <div class="progress-text-info">Распределено</div>
+                                <div class="text-number blue">1</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-25 bg-blue"></div>
+                            </div>
+                            </div>
+                            <div class="pt-4">
+                              <div class="progress-text">
+                                <div class="progress-text-info">В работе</div>
+                                <div class="text-number progress-red">0</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-10 bg-red"></div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="for-month" class="tab-pane fade">
+                      <div class="full-info">
+                        <div class="information">
+                        <div class="single-info">
+                          <div class="info-text">Поступило:</div>
+                          <div class="info-number">10</div>
+                        </div>
+                        <div class="single-info">
+                          <div class="info-text">Решено:</div>
+                          <div class="info-number">1</div>
+                        </div>
+                        <div class="single-info">
+                          <div class="info-text">Закрыто:</div>
+                          <div class="info-number">1</div>
+                        </div>
+                        <div class="single-info">
+                          <div class="info-text">Возвращено в работу:</div>
+                          <div class="info-number">0</div>
+                        </div>
+                      </div>
+                      </div>   
+                      <div class="active-works pt-3">
+                        <div class="active-works__title">Активные дела (17)</div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="pt-3">
+                              <div class="progress-text">
+                                <div class="progress-text-info">Новые</div>
+                                <div class="text-number">10</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-75 bg-success"></div>
+                            </div>
+                            </div>
+                            <div class="pt-4">
+                              <div class="progress-text">
+                                <div class="progress-text-info">В работе</div>
+                                <div class="text-number yellow">1</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-25 bg-yellow"></div>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="pt-3">
+                              <div class="progress-text">
+                                <div class="progress-text-info">Распределено</div>
+                                <div class="text-number blue">1</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-25 bg-blue"></div>
+                            </div>
+                            </div>
+                            <div class="pt-4">
+                              <div class="progress-text">
+                                <div class="progress-text-info">В работе</div>
+                                <div class="text-number progress-red">0</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-10 bg-red"></div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
